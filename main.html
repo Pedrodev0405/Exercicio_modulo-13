@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invencivel</title>
+    <link rel="stylesheet" href="codigo/bootstrap.min.css">
+    <style>
+        .logo{
+            height: 150px;
+            margin: 0px 80px 0px 20px;
+            
+        }
+
+        .nav-link{
+            text-align: center;
+            color: yellow !important;
+            font-size: 1rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        .nav-link:hover{
+            color: gold !important;
+        }
+
+        .navbar{
+            background-color: rgb(0,0,26,255);
+            padding: 0.5rem 1rem;
+        }
+
+        body{
+            background-color: rgb(56,151,241,255);
+        }
+        
+        section{
+            height: 100vh;
+        }
+
+        .navbar-toggler-icon{
+            background-color: white;
+        }
+
+        .carousel-item img {
+            width: 100%;           
+            height: 1000px;
+            object-fit: cover;
+        }
+
+        .card img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        }
+
+            #contato {
+        margin-top: 80px !important; /* Força a aplicação da margem */
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+
+
+        #personagens {
+        margin-bottom: 50px; /* Evita que a seção de personagens fique muito colada ao conteúdo abaixo */
+    }
+
+
+    .titulo-faixa,.edit-personagens,.edit-contato,.rodape{
+        background-color: rgb(0,0,26,255);
+        color: yellow;
+        text-align: center;
+        padding: 0.5rem;
+        width: 100%;
+        margin-bottom: 0.2rem;
+        margin-top: 0.2rem;
+    }
+
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between align-items-center">
+                <img src="imagens/logo-4.jpg"  class="logo">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#temporadas">Temporadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personagens">Personagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--carousel aqui-->
+    <div  id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div  data-bs-interval="3000" class="carousel-item active">
+                <img src="imagens/carousel-1.jpg" class="d-block w-100"/>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="imagens/carousel-2.jpeg" class="d-block w-100"/>
+            </div>
+            <div  data-bs-interval="3000" class="carousel-item">
+                <img src="imagens/carousel-3..jpeg" class="d-block w-100"/>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next"  class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo"  class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <!--fim de carousel-->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <!--conteudo principal-->
+    <section id="temporadas">
+        <div class="titulo-faixa">
+            <h2>Temporadas</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Temporada 1</h2>
+                        </div>
+                        <img src="imagens/temporada-1.webp"/>
+                        <div class="card-body">
+                            <h4>Sobre a temporada ...</h4>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Temporada 2</h2>
+                        </div>
+                        <img src="imagens/temporada-2.jpg"/>
+                        <div class="card-body">
+                            <h4>Sobre a temporada ...</h4>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Temporada 3</h2>
+                        </div>
+                        <img src="imagens/temporada-3.png"/>
+                        <div class="card-body">
+                            <h4>Sobre a temporada ...</h4>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personagens">
+        <div class="edit-personagens">
+            <h2>Personagens</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card h-100">
+                        <div class="card-header text-center">
+                            <h2>mark</h2>
+                        </div>
+                        <img src="imagens/mark.jpg" alt="Mark Grayson" class="card-img-top img-fluid"/>
+                        <div class="card-body  flex-column justify-content-between">
+                            <h4>Mark Grayson é um jovem que herda os poderes sobre-humanos de seu pai, o maior super-herói da Terra, Omni-Man...</h4>
+                            <a href="#" class="btn btn-primary">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card h-100">
+                        <div class="card-header text-center">
+                            <h2>Eve-atomica</h2>
+                        </div>
+                        <img src="imagens/eve-2.webp" alt="Eve-atomica" class="card-img-top img-fluid"/>
+                        <div class="card-body  flex-column justify-content-between">
+                            <h4>Eve Atômica é uma super-heroína com o poder de manipular a matéria em nível molecular, criando e transformando praticamente qualquer coisa....</h4>
+                            <a href="#" class="btn btn-primary">leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card h-100">
+                        <div class="card-header text-center">
+                            <h2>Omni-man</h2>
+                        </div>
+                        <img src="imagens/omni-man.jpg" alt="Omni-Man" class="card-img-top img-fluid"/>
+                        <div class="card-body flex-column justify-content-between">
+                            <h4>Omni-Man é um dos super-heróis mais poderosos da Terra e pai de Mark Grayson...</h4>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card h-100">
+                        <div class="card-header text-center">
+                            <h2>Allen</h2>
+                        </div>
+                        <img src="imagens/allen-2.webp" alt="Allen" class="card-img-top img-fluid"/>
+                        <div class="card-body flex-column justify-content-between">
+                            <h4>Allen, o Alien, é um guerreiro intergaláctico da Coalizão de Planetas....</h4>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card h-100">
+                        <div class="card-header text-center">
+                            <h2>Conquista</h2>
+                        </div>
+                        <img src="imagens/conquista.webp" alt="Conquista" class="card-img-top img-fluid"/>
+                        <div class="card-body flex-column justify-content-between">
+                            <h4>Conquista é um viltrumita impiedoso e veterano de incontáveis batalhas. ...</h4>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--unico jeito de fazer com que contato fique abaixo dos cards que funcionou-->
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <!--unico jeito de fazer com que contato fique abaixo dos cards que funcionou-->
+
+    <section id="contato">
+        <div class="edit-contato">
+            <h2>Contato</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Entre em Contato</h2>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </div>
+    
+    <footer class="rodape">
+        <h4>Todos os direitos reservados - PS &copy; 2025</h4>
+    </footer>    
+    
+    <script src="codigo/bootstrap.bundle.min.js"></script>
+</body>
+</html>
